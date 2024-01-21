@@ -1,0 +1,144 @@
+:root {
+    --colororg: rgb(250, 250, 250);
+    --color1: #04AA6D;
+    --fontirs: irs;
+    --fontbahaman: bahman;
+    --fontlale: lale;
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+body {
+    background: var(--colororg);
+}
+
+/* mfd */
+@media (min-width:300px) {
+
+    /* #headlogo{
+        border: 3px solid var(--color1) ;
+        background-color: var(--color1);
+    } */
+    #headlogo {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .tech-brain-logo {
+        width: 50px;
+
+    }
+
+    .user {
+        display: flex;
+        margin-top: -47px;
+    }
+
+    #btn1 {
+        /* background-color: var(--color1); */
+        border: none;
+        outline: none;
+        stroke: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: white;
+        font-family: var(--fontirs);
+        animation-name: colorgr;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+    }
+
+    #btn1:hover {
+        opacity: 0.5;
+        background-color: gray;
+    }
+
+    #btn1:focus {
+        opacity: 0.5;
+        background-color: gray;
+    }
+
+    .moarefy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #04AA6D;
+        background-color: #04AA6D;
+        color: white;
+        border-radius: 17px;
+    }
+
+    .tozihat {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tozihat p1 {
+        font-size: larger;
+        font-family: var(--fontirs);
+    }
+
+    .start,.code,.codehtml {
+        display: flex;
+        justify-content: center;
+    }
+    #btn2,#btn3,#btn4{
+        border: none;
+        outline: none;
+        stroke: none;
+        width: 298px;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 10px;
+        font-family: var(--fontirs);
+        animation-name: buttoncolor;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
+        /* transition: all 2s; */
+    }
+    #buyfa{
+        display: flex;
+        justify-content: center;
+    }
+    #buyfa p{
+        color: black;
+        font-family: var(--fontirs);
+        font-size: 40px;
+    }
+    
+    }
+    /* #btn1 ,#btn2 ,#btn3 ,#btn4:hover{
+        opacity: 0.5;
+        transform: scale(1.2);
+    } */
+
+@keyframes colorgr {
+    from {
+        background-color: #04AA6D;
+    }
+
+    100% {
+        background-color: blueviolet;
+    }
+}
+@keyframes buttoncolor{
+    from {background-color: blueviolet;}
+    50%{background-color: aqua;color: black;}
+    100%{background-color: blueviolet; color: white;}
+}

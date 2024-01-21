@@ -1,0 +1,38 @@
+:root {
+    --colororg: rgb(250, 250, 250);
+    --color1: #04AA6D;
+    --fontirs: irs;
+    --fontbahaman: bahman;
+    --fontlale: lale;
+}
+
+@font-face {
+    font-family: irs;
+    src: url(IRANSansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: bahman;
+    src: url(Bahman\ 1.ttf);
+}
+
+@font-face {
+    font-family: lale;
+    src: url(Lalezar-Regular.ttf);
+}
+
+body {
+    background: var(--colororg) !important;
+}
+*{
+    font-family: var(--fontirs);
+}
+#btn1{
+    background-color: var(--color1);
+    stroke: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100px;
+    border-radius: 10px;
+}

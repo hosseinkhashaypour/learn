@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="codejs.css">
+  <link rel="shortcut icon" href="tech_brain_with_white_color.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کدآموز / محیط کدJS</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<a href="home.html">  <img src="tech_brain_with_white_color.jpg" alt="brain" class="logo"></a>
+  <header>کد آموز</header>
+  <main>
+    <div id="editor" contenteditable="true" spellcheck="false">//کد جاوا اسکریپت را وارد کنید</div>
+    <button onclick="runCode()" class="btn1">اجرای کد</button>
+    <br>
+    <br>
+    <div id="output"></div>
+  </main>
+
+  <script>
+    function runCode() {
+      try {
+        const code = document.getElementById('editor').innerText;
+        const result = eval(code);
+        document.getElementById('output').innerHTML = '<strong>Output:</strong> ' + result;
+      } catch (error) {
+        document.getElementById('output').innerHTML = '<strong>Error:</strong> ' + error.message;
+      }
+    }
+  </script>
+</body>
+</html>

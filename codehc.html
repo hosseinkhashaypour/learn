@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="tech_brain_with_white_color.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کدآموز html css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#code-editor {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+button {
+    display: block;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.output-container {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#output {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+</style>
+<body>
+    <div class="code-container">
+        <textarea id="code-editor" placeholder="کد ها را اینجا وارد کنید"></textarea>
+        <button onclick="runCode()">اجرای کد</button>
+    </div>
+    
+    <div class="output-container">
+        <h2>نتیجه کد :</h2>
+        <div id="output"></div>
+    </div>
+
+   <script>function runCode() {
+    const code = document.getElementById('code-editor').value;
+    const outputContainer = document.getElementById('output');
+    outputContainer.innerHTML = code;
+}
+</script>
+</body>
+</html>
